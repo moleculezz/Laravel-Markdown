@@ -12,7 +12,7 @@
 namespace GrahamCampbell\Markdown;
 
 use Illuminate\Support\ServiceProvider;
-use ParsedownExtra as MD;
+use League\CommonMark\CommonMarkConverter as MD;
 
 /**
  * This is the markdown service provider class.

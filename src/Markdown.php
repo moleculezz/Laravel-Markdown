@@ -11,7 +11,7 @@
 
 namespace GrahamCampbell\Markdown;
 
-use ParsedownExtra as MD;
+use League\CommonMark\CommonMarkConverter as MD;
 
 /**
  * This is the markdown class.
@@ -48,7 +48,7 @@ class Markdown
      */
     public function render($value)
     {
-        return $this->md->text($value);
+        return $this->md->convertToHtml($value);
     }
 
     /**
